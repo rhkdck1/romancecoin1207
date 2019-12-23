@@ -4666,14 +4666,14 @@ void static RomancecoinMiner(CWallet *pwallet)
         loop
         {
             unsigned int nHashesDone = 0;
-            printf("hashTarget = : %u \n", hashTarget);  
+            printf("hashTarget = : %d \n", hashTarget);  
 
             uint256 thash;
             char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
             loop
             {
                 scrypt_1024_1_1_256_sp(BEGIN(pblock->nVersion), BEGIN(thash), scratchpad);
-                printf("thash = :  %u \n", thash);            
+                printf("thash = :  %d \n", thash);            
 
                 if (thash <= hashTarget)
                 {
