@@ -4666,7 +4666,7 @@ void static RomancecoinMiner(CWallet *pwallet)
         loop
         {
             unsigned int nHashesDone = 0;
-            printf("hashTarget = : %u \n", hasTarget);  
+            printf("hashTarget = : %u \n", hashTarget);  
 
             uint256 thash;
             char scratchpad[SCRYPT_SCRATCHPAD_SIZE];
